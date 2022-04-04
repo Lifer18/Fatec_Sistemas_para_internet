@@ -1,0 +1,66 @@
+ body{background-color: #ebebeb;
+		margin: 0;}
+ h1{font-family: 'Pacifico', cursive;
+ 	font-weight: normal;
+ }
+ iframe{border: 0;
+ 		width: 400px;
+ 		height: 320px;
+ 	}
+ .container {width: 960px;
+ 				margin: 0 auto;
+ 				box-shadow: 0 10px 10px rgba(0,0,0,0.2);
+ 			}
+.escuro{background-color: #382119;}
+.claro{background-color: white;}
+.beje{background-color: #d3c39d;}
+
+.disp{display: flex;
+		justify-content: space-between;}
+
+
+ .caixa{position: relative;
+ 		height: 70px;}
+ .logo{position: absolute;
+ 		top: 10px;
+ 		width: 60px;
+ 		left: 10px;}
+ .posinav{position: absolute;
+ 			right: 80px;
+ 			line-height: 70px;}
+ a.anavs{text-decoration: none;
+ 	padding-left: 45px;
+ 	color: white;}
+ a.anavs1{text-decoration: none;
+ 	padding-right: 45px;
+ 	color: white}
+ a:hover.anavs{text-decoration: underline;}
+ a:hover.anavs1{text-decoration: underline;}
+
+
+.header{position: relative;}
+h1.header{position: absolute;
+			bottom: 20px;
+			right: 325px;
+			color: white;
+		}
+.preench{padding: 110px;
+		padding-bottom: 95px;}
+.preenchmenu{padding: 80px;
+		padding-top: 110px;}
+.circulo{border-radius: 50%;
+		height: 100%;}
+.sobre{padding-left: 80px;}
+
+h1.lanches{color: white;}
+
+.buffalo{width: 170px;
+		background-color: white;
+		padding: 10px;
+		border-radius: 5px;}
+.big{width: 100%;
+		border-radius: 50%;}
+.copyright{line-height: 70px;
+			color: white;
+			margin: 0;
+			text-align: center;}

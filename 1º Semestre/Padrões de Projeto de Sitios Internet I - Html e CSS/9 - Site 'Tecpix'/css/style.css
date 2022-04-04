@@ -1,0 +1,129 @@
+body{
+	background-color: lightgray;
+	margin: 0;
+	
+	}
+a{
+	text-decoration: none;
+	color: black;
+	font-family: 'Comic Sans', cursive; 
+	}
+h2,h3{
+	font-family: 'Comic Sans', cursive; 
+	}
+img.funcoes{
+	border:	3px white;
+	border-radius: 50%;
+	}
+h3{
+	margin: 0;
+	}
+iframe{
+	width: 960px;
+	height: 540px;
+	border: 0;
+	}
+form{
+	width: 420px;
+	}
+input[type=text]{
+	width: 100%;
+	margin-bottom: 20px;
+	padding: 5px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-radius: 5px;
+	border:none;
+	}
+textarea{
+	width: 100%;
+	height: 170px;
+	margin-bottom: 20px;
+	padding: 5px;
+	border-radius: 10px;
+	border:none;
+	}
+input[type=submit]{
+	background: #be2393;
+	border-style: dashed;
+	padding: 10px;
+	border-radius: 10px;
+	}
+footer{
+	height: 60px;
+	text-align: center;
+	line-height: 60px;
+	}
+.container{
+	width: 960px;
+	margin: 0 auto;
+	box-shadow: 0 5px 25px black;
+	}
+.branco{
+	background-color: white;
+	}
+.roxo{
+	background-color: #330065;
+	color: white;
+	}
+.rosa{
+	background-color: #be2393;
+	}
+.disp{
+	display: flex;
+	justify-content: space-around;
+	}
+.disp2{
+	display: flex;
+	justify-content: space-around;
+	padding-top: 100px;
+	}
+.caixa{
+	position: relative;
+	height: 70px;
+	}
+.logo{
+	position: absolute;
+	left: 5px;
+	top: 2px;
+	}
+.links{
+	padding-right: 80px;
+	}
+.links1{
+	padding-right: 85px;
+	}
+.navpos{
+	line-height: 70px;
+	text-align: right;
+	}
+.pinicio{
+	margin: 0;
+	padding-top: 87px;
+	padding-left: 80px;
+	padding-bottom: 100px;
+	padding-right: 86px;
+	}
+.pfuncoes{
+	margin: 0;
+	padding: 80px;
+	padding-top: 88px;
+	padding-bottom: 100px;
+	}
+.funcoes{
+	width: 140px;
+	text-align: center;
+	}
+.pcontato{
+	margin: 0;
+	padding-top: 85px;
+	padding: 80px;
+	padding-right: 60px;
+	}
+.dispcontato{
+	display: flex;
+	justify-content: space-between;
+	}
+.info{
+	width: 320px;
+	}

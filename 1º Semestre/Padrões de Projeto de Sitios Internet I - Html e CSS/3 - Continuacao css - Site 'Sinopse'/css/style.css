@@ -1,0 +1,21 @@
+ body {background-color: #ebebeb;
+ 		margin: 0}
+
+ h1		{text-align: center;}
+
+ .a      {text-align: center;}
+
+ .preench{padding: 96px;}
+
+ .colesq{padding-right:  96px;}
+
+ .pulaimg{padding-bottom: 96px;}
+
+ .escuro{background-color: #404040;
+ 			color: white;}
+
+ .divdisp {display: flex;}
+
+ .container {width: 960px;
+ 				margin: auto;
+ 				background-color: white}
