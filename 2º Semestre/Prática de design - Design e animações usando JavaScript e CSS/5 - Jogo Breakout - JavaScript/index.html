@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+
+		<title></title>
+		<style>
+		canvas{
+			background-image: url(images/fundo.png);
+			background-size: cover;
+			display: block; margin: auto;
+		}
+		</style>
+	</head>
+	<body>
+		<canvas id="canvas" width="480" height="320"></canvas>
+		<script type="text/javascript">
+			var canvas = document.getElementById('canvas');
+			var ctx = canvas.getContext('2d');
+
+			var bolax = canvas.width/2;
+			var bolay = canvas.height - 30;
+
+			var dbolax = 2;
+			var dbolay = 2;
+
+			var bolacor = 'red';
+
+			var raclarg = 70;
+			var racx = canvas.width/2-35;
+
+			var dir = false;
+			var esq = false;
+
+			var pontos = 0;
+			var vidas = 2;
+
+			document.addEventListener("keydown", teclad);
+			document.addEventListener("keyup", teclau);
+
+			function teclad(e){
+				if(e.key == "ArrowRight"){
+					dir = true;
+				}
+				else if(e.key == "ArrowLeft"){
+					esq = true;
+				}
+			}
+
+			function teclau(e){
+				if(e.key == "ArrowRight"){
+					dir = false;
+				}
+				else if(e.key == "ArrowLeft"){
+					esq = false;
+				}
+			}
+			var blocos = [];
+			for (var c = 0; c < 5; c++) {
+				blocos[c]=[];
+				for (var l = 0; l < 5; l++) {
+					blocos[c][l] = {x: 0, y: 0, status: 1};
+				}
+			}
+			var blocoimg = document.createElement("img");
+			blocoimg.src = "images/tijolo.png";
+			function tijolos(){
+				for (var c = 0; c < 5; c++) {
+				for (var l = 0; l< 5; l++) {
+					if (blocos[c][l].status ==1){
+					blocos[c][l].x = c * 75 + c*15 + 22.5;
+					blocos[c][l].y = l* 15 + l*15 + 22.5;
+				//ctx.beginPath();
+				ctx.drawImage(blocoimg,blocos[c][l].x,blocos[c][l].y,75,20);
+				/*ctx.fillStyle = "yellow"
+				ctx.fill();
+				ctx.closePath();*/
+				}
+			}
+			}
+			}
+			function colisao(){
+				for (var c = 0; c < 5; c++) {
+					for (var l = 0; l < 5; l++) {
+					if (blocos[c][l].status == 1){
+						if (bolax > blocos[c][l].x && bolax < blocos[c][l].x+75 && bolay > blocos[c][l].y && bolay < blocos[c][l].y+20){
+							blocos[c][l].status = 0;
+								dbolay = -dbolay;
+								pontos = pontos + 10;
+								console.log(pontos);
+								if (pontos == 250) {
+									alert("Parabéns!!");
+									document.location.reload(); //meu documento, localiza e da o F5
+									clearInterval(interval);
+								}
+						}
+						else{
+						}
+					}
+				}
+			}
+		}
+
+		function mostrarpontos() {
+				ctx.font = "12px Arial Black"; //ctx serve para texto
+				ctx.fillStyle = "black";
+				ctx.fillText("Pontos: " + pontos, 20, 20); //o "pontos" é uma ("string"), e os dois números são posicionamento, x e y, ("string", x, y)
+		}
+		function mostrarvidas() {
+				ctx.font = "12px Arial Black"; //ctx serve para texto
+				ctx.fillStyle = "black";
+				ctx.fillText("Vidas: " + (vidas+1), 420, 20); //o "pontos" é uma ("string"), e os dois números são posicionamento, x e y, ("string", x, y)
+		}
+
+			var bolaimg = document.createElement("img");
+			bolaimg.src = "images/bola.png";
+			function bola(){
+				ctx.drawImage(bolaimg,bolax,bolay,20,20);
+				/*ctx.beginPath();
+				ctx.arc(bolax,bolay,10,0,6);
+				ctx.fillStyle = bolacor;
+				ctx.fill();
+				ctx.closePath();*/
+			}
+
+			function update(){
+				ctx.clearRect(0,0,canvas.width,canvas.height);
+				bola();
+				raquete();
+				tijolos();
+				colisao();
+				mostrarpontos();
+				mostrarvidas();
+
+				bolax = bolax + dbolax;
+				bolay = bolay - dbolay;
+
+				if (bolax > canvas.width){
+					dbolax = -dbolax;
+					bolaimg.src = "images/bola3.png";
+
+				} else if (bolax < 0){
+					dbolax = -dbolax;
+					bolaimg.src = "images/bola4.png";
+				}
+				if ((bolay > canvas.height-25) && (bolax > racx && bolax < racx + raclarg+10)) {
+					bolaimg.src = "images/bola.png";
+						dbolay = -dbolay;
+					}
+
+				else if(bolay > canvas.height-25){
+					if (vidas > 0){
+						vidas = vidas-1;
+
+						bolax = canvas.width/2;
+						bolay = canvas.height - 30;
+						dbolax = 2;
+						dbolay = -2;
+						racx = canvas.width/2 - raclarg/2;
+					}
+					else{
+					console.log(vidas);
+					alert("Game Over");
+					document.location.reload();
+					clearInterval(interval);
+					}
+				}
+
+				 else if (bolay < 0){
+					dbolay = -dbolay;
+					bolaimg.src = "images/bola2.png";
+				}
+
+				if(dir){
+					racx = racx + 3;
+					if (racx + raclarg > canvas.width){
+						racx = canvas.width - raclarg;
+					}
+				}
+				else if (esq){
+					racx = racx - 3;
+					if(racx < 0)
+						racx = 0;
+				}
+			}
+
+			var racimg = document.createElement("img");
+			racimg.src = "images/raquete2.png";
+
+			function raquete(){
+				ctx.drawImage(racimg,racx,canvas.height - 20, raclarg,20);
+				/*
+				ctx.beginPath();
+				ctx.rect(racx,canvas.height - 20, raclarg,20);
+				ctx.fillStyle = "black";
+				ctx.fill();
+				ctx.closePath();*/
+			}
+			var interval = setInterval(update, 10);
+
+
+
+
+
+			/*ctx.beginPath();
+			ctx.rect(140, 100, 200, 20);
+			ctx.fillStyle = "pink";
+			ctx.fill();
+			ctx.closePath();
+
+			ctx.beginPath();
+			ctx.arc(230, 150, 20, 0, 360);
+			ctx.fillStyle = "red";
+			ctx.fill();
+			ctx.closePath();*/
+
+		</script>
+	</body>
+</html>

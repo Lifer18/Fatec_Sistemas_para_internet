@@ -1,0 +1,175 @@
+.container{
+		width: 1600px;
+		height: 900px;
+		border: 2px black solid;
+		position: relative;
+		margin: auto;
+		background-image: url(fundo.jpg);
+		background-size: auto;
+	}
+
+.caminhando{
+	position: absolute;
+	animation: andar 10s;
+	animation-iteration-count: infinite;
+	z-index: 1;
+	}
+.dancando{
+	position: absolute;
+	left: 280px;
+	bottom: 150px;
+	animation: dancar 2.5s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes dancar{
+	0%{
+		transform: rotateY(0deg);
+	}
+	50%{
+		transform: rotateY(0deg);
+	}
+	50.1%{
+		transform: rotateY(180deg);
+	}
+	99.9%{
+		transform: rotateY(180deg);
+	}
+	100%{
+		transform: rotateY(0deg);
+	}
+}
+@keyframes andar{
+	0%{
+		transform: rotateY(180deg);
+		left: 0px;
+		bottom: 0px;
+	}
+	2.5%{
+		left: 50px;
+	}
+	5%{
+		left: 100px;
+	}
+	7.5%{
+		left: 150px;
+	}
+	10%{
+		left: 200px;
+	}
+	12.5%{
+		left: 250px;
+	}
+	15%{
+		left: 300px;
+	}
+	17.5%{
+		left: 350px;
+	}
+	20%{
+		left: 400px;
+	}
+	22.5%{
+		left: 450px;
+	}
+	25%{
+		left: 500px;
+	}
+	27.5%{
+		left: 550px;
+	}
+	30%{
+		left: 600px;
+	}
+	32.5%{
+		left: 650px;
+	}
+	35%{
+		left: 700px;
+	}
+	37.5%{
+		left: 750px;
+	}
+	40%{
+		left: 800px;
+	}
+	42.5%{
+		left: 850px;
+	}
+	45%{
+		left: 900px;
+	}
+	47.5%{
+		left: 950px;
+	}
+	50%{
+		left: 1000px;
+		bottom: 0px;
+		transform: rotateY(180deg);
+	}
+	50.1%{
+		transform: rotateY(0deg);
+	}
+	52.5%{
+		left: 950px;
+	}
+	55%{
+		left: 900px;
+	}
+	57.5%{
+		left: 850px;
+	}
+	60%{
+		left: 800px;
+	}
+	62.5%{
+		left: 750px;
+	}
+	65%{
+		left: 700px;
+	}
+	67.5%{
+		left: 650px;
+	}
+	70%{
+		left: 600px;
+	}
+	72.5%{
+		left: 550px;
+	}
+	75%{
+		left: 500px;
+	}
+	77.5%{
+		left: 450px;
+	}
+	80%{
+		left: 400px;
+	}
+	82.5%{
+		left: 350px;
+	}
+	85%{
+		left: 300px;
+	}
+	87.5%{
+		left: 250px;
+	}
+	90%{
+		left: 200px;
+	}
+	92.5%{
+		left: 150px;
+	}
+	95%{
+		left: 100px;
+	}
+	97.5%{
+		left: 50px;
+	}
+	100%{
+		left: 0px;
+		bottom: 0px;
+	}
+
+}

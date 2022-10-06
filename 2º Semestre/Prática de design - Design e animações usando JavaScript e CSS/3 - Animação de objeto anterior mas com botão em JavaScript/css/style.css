@@ -1,0 +1,225 @@
+.container{
+	width: 800px;
+	height: 600px;
+	border: solid black 3px;
+	position: relative;
+	}
+.bola{
+	background-color: red;
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	top: 0;
+	}
+.botao{
+	width: 100px;
+	height: 100px;
+	background-color: blue;
+	position: absolute;
+	right: 350px;
+	top: 250px;
+	}
+.anima{
+	animation: rodar 10s infinite;
+	}
+@keyframes rodar{
+	0%{
+		background-color: red;
+		top: 0px;
+		}
+	12.5%{
+		background-color: pink;
+		top: 225px;
+		}
+	25%{
+		background-color: black;
+		transform: rotate(0deg);
+		top: 450px;
+		left: 0px;
+		}
+	27.5%{
+		transform: rotate(45deg);
+		left: 65px;
+		top: 415px;
+	}
+	30%{
+		transform: rotate(90deg);
+		left: 130px;
+		top: 450px;
+	}
+	32.5%{
+		transform: rotate(135deg);
+		left: 195px;
+		top: 415px;
+	}
+	35%{
+		transform: rotate(180deg);
+		left: 260px;
+		top: 450px;
+	}
+	37.5%{
+		background-color: pink;
+		transform: rotate(225deg);
+		left: 325px;
+		top: 415px;
+	}
+	40%{
+		transform: rotate(270deg);
+		left: 390px;
+		top: 450px;
+	}
+	42.5%{
+		transform: rotate(325deg);
+		left: 455px;
+		top: 415px;	
+	}
+	45%{
+		transform: rotate(360deg);
+		left: 520px;
+		top: 450px;
+	}
+	47.5%{
+		transform: rotate(405deg);
+		left: 585px;
+		top: 415px;
+	}
+	50%{
+		background-color: red;
+		transform: rotate(450deg);
+		left: 650px;
+		top: 450px;
+	}
+	52.5%{
+		background-color: red;
+		transform: rotate(495deg);
+		left: 615px;
+		top: 405px;
+	}
+	55%{
+		background-color: red;
+		transform: rotate(540deg);
+		left: 650px;
+		top: 360px;
+	}
+	57.5%{
+		background-color: red;
+		transform: rotate(585deg);
+		left: 615px;
+		top: 315px;
+	}
+	60%{
+		background-color: red;
+		transform: rotate(630deg);
+		left: 650px;
+		top: 270px;
+	}
+	62.5%{
+		background-color: red;
+		transform: rotate(675deg);
+		left: 615px;
+		top: 225px;
+	}
+	65%{
+		background-color: red;
+		transform: rotate(720deg);
+		left: 650px;
+		top: 180px;
+	}
+	67.5%{
+		background-color: red;
+		transform: rotate(765deg);
+		left: 615px;
+		top: 135px;
+	}
+	70%{
+		background-color: red;
+		transform: rotate(810deg);
+		left: 650px;
+		top: 90px;
+	}
+	72.5%{
+		background-color: red;
+		transform: rotate(855deg);
+		left: 615px;
+		top: 45px;
+	}
+	75%{
+		background-color: red;
+		transform: rotate(900deg);
+		left: 650px;
+		top: 0px;
+	}
+	77.5%{
+		background-color: red;
+		transform: rotate(945deg);
+		left: 585px;
+		top: 35px;
+	}
+	80%{
+		background-color: red;
+		transform: rotate(990deg);
+		left: 520px;
+		top: 0px;
+	}
+	82.5%{
+		background-color: red;
+		transform: rotate(1035deg);
+		left: 455px;
+		top: 35px;
+	}
+	85%{
+		background-color: red;
+		transform: rotate(1080deg);
+		left: 390px;
+		top: 0px;
+	}
+	87.5%{
+		background-color: red;
+		transform: rotate(1125deg);
+		left: 325px;
+		top: 35px;
+	}
+	90%{
+		background-color: red;
+		transform: rotate(1170deg);
+		left: 260px;
+		top: 0px;
+	}
+	92.5%{
+		background-color: red;
+		transform: rotate(1215deg);
+		left: 195px;
+		top: 35px;
+	}
+	95%{
+		background-color: red;
+		transform: rotate(1260deg);
+		left: 130px;
+		top: 0px;
+	}
+	97.5%{
+		background-color: red;
+		transform: rotate(1305deg);
+		left: 65px;
+		top: 35px;
+	}
+	100%{
+		background-color: red;
+		transform: rotate(1350deg);
+		left: 0px;
+		top: 0px;
+	}
+
+}
+
+	@keyframes pular{
+		0%{
+			transform: translateY(0);
+		}
+		50%{
+			transform: translateY(-250px);
+		}
+		100%{
+			transform: translateY(0);
+		}
+	}

@@ -1,0 +1,60 @@
+body{
+  background: url(images/bg.png);
+  margin: 0;
+}
+.comodo{
+  width: 800px;
+  height: 600px;
+  background-color: blue;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+.moldura{
+  background: url(images/moldura.png);
+  width: 891px;
+  height: 702px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none
+}
+.caderneta{
+  background: url(images/caderneta.png);
+  width: 356px;
+  height: 505px;
+  position: absolute;
+  top: 50%;
+  transform: rotate(-7deg) translateY(-50%);
+}
+.caderneta--itens{
+  position: absolute;
+  width: 356px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.caderneta p{
+  text-align: center;
+  font-family: 'Caveat', cursive;
+  font-size: 2rem;
+}
+.moeda{
+  position: absolute;
+  top: 50%;
+  right: 10px;
+}
+.vinheta{
+  background: url(images/vinheta.png);
+  background-size: cover;
+  opacity: 0.65;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  pointer-events: none
+}
+.txt-riscado{
+  text-decoration: line-through;
+}

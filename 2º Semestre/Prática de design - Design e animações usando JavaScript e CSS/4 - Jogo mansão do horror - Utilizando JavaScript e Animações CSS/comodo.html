@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="estiloComodo.css">
+    <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
+    <title></title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="comodo">
+          <!-- Aqui vai o código para o cômodo -->
+            <!-- <iframe src="quartoBruxa/quarto.html" width="800px" height="600px"></iframe> -->
+            <div class="cont-comodo">
+            <img src="images/fundo.png" alt="" class="fundo" id="fundo">
+            <img src="images/fundo.png" alt="" class="fundok" id="fundok">
+
+            <img src="images/carta.png" alt="" class="carta">
+            <img src="images/papel.png" alt="" class="papel">
+            <h2 class="legenda">Desgraçado...A porta fechou atrás de mim, ok, vamos achar oque ele quer!</h2>
+              <div>
+                <img src="images/bau.png" alt="" class="bau" id="bau" onclick="bau()">
+                <audio src="sounds/tranca.mp3" id="s-bau">
+                  Seu navegador não suporta elementos de audio
+                </audio>
+                <h1 class="legbau" id="legbau">Trancado, oque será que tem dentro?</h1>
+              </div>
+              <div>
+                <img src="images/knightre4.png" alt="" class="knightre" id="knightre" onclick="knightre()">
+                <audio src="sounds/correntes.mp3" id="s-knightre">
+                  Seu navegador não suporta elementos de audio
+                </audio>
+                <h1 class="legknightre" id="legknightre">Meu deus, não se solte...</h1>
+              </div>
+              <div>
+                <img src="images/lanternafeixe.png" alt="" class="lanternafeixe">
+                <img src="images/lanternacortada.png" alt="" class="lanterna">
+                <img src="images/lanternainteira.png" alt="" class="lanternainteira" id="lanterna" onclick="lanterna()">
+                <audio src="sounds/lanterna.mp3" id="s-lanterna">
+                  Seu navegador não suporta elementos de audio
+                </audio>
+                <h1 class="leglanterna" id="leglanterna">Uma lanterna...isso pode ser útil!</h1>
+              </div>
+              <div>
+                <img src="images/knight1.png" alt="" class="knight" id="knight" onclick="knight()">
+                <img src="images/capacete.png" alt="" class="capacete" id="capacete" onclick="knight()">
+                <audio src="sounds/knight.mp3" id="s-knight">
+                  Seu navegador não suporta elementos de audio
+                </audio>
+              </div>
+              <div>
+                <img src="images/knight2.png" alt="" class="knightv" id="knightv">
+              </div>
+              <div>
+                <img src="images/rubicortado.png" alt="" class="rubi">
+                <img src="images/rubiinteiro.png" alt="" class="rubiinteiro" id="rubi" onclick="rubi()">
+                <audio src="sounds/rubi.mp3" id="s-rubi">
+                  Seu navegador não suporta elementos de audio
+                </audio>
+                <h1 class="legrubi" id="legrubi">Um rubi, parece valioso!</h1>
+              </div>
+              <div>
+                <img src="images/gargolaataque.png" alt="" class="gargolaataque" id="gargolaataque">
+                <img src="images/gargola.png" alt="" class="gargola" id="gargola" onclick="gargola()">
+                <audio src="sounds/gargola.mp3" id="s-gargola">
+                  Seu navegador não suporta elementos de audio
+                </audio>
+              </div>
+              <div>
+                <img src="images/espadacortada.png" alt="" class="espada">
+                <img src="images/espadainteira.png" alt="" class="espadainteira" id="espada" onclick="espada()">
+                <audio src="sounds/espada.mp3" id="s-espada">
+                  Seu navegador não suporta elementos de audio
+                </audio>
+                <h1 class="legespada" id="legespada">Está afiada!</h1>
+              </div>
+              <div>
+                <img src="images/quadrocortado.png" alt="" class="quadro">
+                <img src="images/quadrointeiro.png" alt="" class="quadrointeiro" id="quadro" onclick="quadro()">
+                <audio src="sounds/quadro.mp3" id="s-quadro">
+                  Seu navegador não suporta elementos de audio
+                </audio>
+                <h1 class="legquadro" id="legquadro">Só pode ser esse o quadro..</h1>
+              </div>
+              <div>
+                <img src="images/orgao.png" alt="" class="orgao" id="orgao" onclick="orgao()">
+                <audio src="sounds/piano.mp3" id="s-orgao">
+                  Seu navegador não suporta elementos de audio
+                </audio>
+              </div>
+
+               <div>
+                <img src="images/livro.png" alt="" class="livro" id="livro" onclick="livro()">
+                <audio src="sounds/livro.mp3" id="s-livro">
+                  Seu navegador não suporta elementos de audio
+                </audio>
+                <h1 class="leglivro" id="leglivro">Bom, parece bem sagrado pra mim!</h1>
+              </div>
+
+            </div>
+      </div>
+      <div class="moldura">
+
+      </div>
+      <div class="caderneta">
+        <div class="caderneta--itens">
+          <p id="txtlanterna">Lanterna</p>
+          <p id="txtespada">Espada</p>
+          <p id="txtquadro">Quadro</p>
+          <p id="txtrubi">Rubi</p>
+          <p id="txtlivro">Livro Sagrado</p>
+        </div>
+      </div>
+      <div class="moeda">
+        <img src="images/moeda.png" alt="">
+      </div>
+      <div class="vinheta">
+
+      </div>
+      <iframe src="sounds/silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+      <audio src="sounds/ventoBg.mp3" class="somfundo">
+      <script>
+        function bau(){
+          var elemento = document.getElementById("bau");
+          elemento.classList.toggle("anim-bau");
+
+          document.getElementById("s-bau").play();
+          legbau();
+        }
+        function legbau(){
+          var elemento = document.getElementById("legbau");
+          elemento.classList.toggle("anim-legbau");
+        }
+      
+        function knightre(){
+          var elemento = document.getElementById("knightre");
+          elemento.classList.toggle("anim-knightre");
+
+          document.getElementById("s-knightre").play();
+          legknightre();
+        }
+        function legknightre(){
+          var elemento = document.getElementById("legknightre");
+          elemento.classList.toggle("anim-legknightre");
+        }
+        function lanterna(){
+          var elemento = document.getElementById("lanterna");
+          elemento.classList.toggle("anim-lanterna");
+
+          var elementoTxt = document.getElementById("txtlanterna");
+          elementoTxt.classList.add("txt-riscado");
+
+          document.getElementById("s-lanterna").play();
+
+          leglanterna();
+        }
+        function leglanterna(){
+          var elemento = document.getElementById("leglanterna");
+          elemento.classList.toggle("anim-leglanterna");
+        }
+        function knight(){
+          var elemento = document.getElementById("capacete");
+          elemento.classList.toggle("anim-knight");
+
+          document.getElementById("s-knight").play();
+          fundok();
+        }
+        function rubi(){
+          var elemento = document.getElementById("rubi");
+          elemento.classList.toggle("anim-rubi");
+
+          var elementoTxt = document.getElementById("txtrubi");
+          elementoTxt.classList.add("txt-riscado");
+
+          document.getElementById("s-rubi").play();
+          legrubi();
+        }
+        function legrubi(){
+          var elemento = document.getElementById("legrubi");
+          elemento.classList.toggle("anim-legrubi");
+        }
+        function espada(){
+          var elemento = document.getElementById("espada");
+          elemento.classList.toggle("anim-espada");
+
+          var elementoTxt = document.getElementById("txtespada");
+          elementoTxt.classList.add("txt-riscado");
+
+          document.getElementById("s-espada").play();
+          legespada();
+        }
+        function legespada(){
+          var elemento = document.getElementById("legespada");
+          elemento.classList.toggle("anim-legespada");
+        }
+        function gargola(){
+          var elemento = document.getElementById("gargolaataque");
+          elemento.classList.toggle("anim-gargola");
+
+          document.getElementById("s-gargola").play();
+          fundo();
+        }
+        function fundo(){
+          var elemento = document.getElementById("fundo");
+          elemento.classList.toggle("anim-fundo");
+        }
+        function fundok(){
+          var elemento = document.getElementById("fundok");
+          elemento.classList.toggle("anim-fundok");
+        }
+        function quadro(){
+          var elemento = document.getElementById("quadro");
+          elemento.classList.toggle("anim-quadro");
+
+          var elementoTxt = document.getElementById("txtquadro");
+          elementoTxt.classList.add("txt-riscado");
+
+          document.getElementById("s-quadro").play();
+          legquadro();
+        }
+        function legquadro(){
+          var elemento = document.getElementById("legquadro");
+          elemento.classList.toggle("anim-legquadro");
+        }
+        function livro(){
+          var elemento = document.getElementById("livro");
+          elemento.classList.toggle("anim-livro");
+
+          var elementoTxt = document.getElementById("txtlivro");
+          elementoTxt.classList.add("txt-riscado");
+
+          document.getElementById("s-livro").play();
+          leglivro();
+        }
+        function leglivro(){
+          var elemento = document.getElementById("leglivro");
+          elemento.classList.toggle("anim-leglivro");
+        }
+        function orgao(){
+          document.getElementById("s-orgao").play();
+        }
+      </script>
+  </div>
+  </body>
+</html>

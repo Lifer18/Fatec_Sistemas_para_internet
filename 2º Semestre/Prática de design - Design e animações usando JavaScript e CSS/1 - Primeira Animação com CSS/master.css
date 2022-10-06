@@ -1,0 +1,203 @@
+.container{
+	width: 560px;
+	height: 960px;
+	border: black solid 5px;
+	margin: auto;
+	position: relative;
+	}
+
+.cabeca{
+	position: absolute;
+	left: 175px;
+	top: 67px;
+	width: 230px;
+	height: 315px;
+	background-color: #A68D91;
+	border-radius: 50%;
+	z-index: 0;
+	}
+.cabelocima{
+	position: absolute;
+	left: 205px;
+	top: 69px;
+	width: 169.5px;
+	height: 132px;
+	background-color: #000000;
+	border-radius: 50%;
+	}
+.cabelolado{
+	position: absolute;
+	left: 176.448px;
+	top: 150.758px;
+	width: 36.443px;
+	height: 94.983px;
+	background-color: #000000;
+	border-radius: 50%;
+	transform: rotate(-355.53deg);
+	}
+.orelhae{
+	position: absolute;
+	left: 155.149px;
+	top: 206.396px;
+	width: 30.702px;
+	height: 63.208px;
+	background-color: #805C64;
+	border-radius: 50%;
+	transform: rotate(-10.15deg);
+	}
+.orelhad{
+	position: absolute;
+	left: 390.397px;
+	top: 194.356px;
+	width: 30.586px;
+	height: 63.363px;
+	background-color: #805C64;
+	border-radius: 50%;
+	transform: rotate(-351.41deg);
+	}
+.olhoe{
+	position: absolute;
+	width: 63.75px;
+	background-color: #BA101D;
+	border-radius: 50%;
+	animation: olho 5s;
+	animation-iteration-count: infinite;
+	}
+	@keyframes olho{
+	0%{
+	left: 206.25px;
+	top: 242.232px;
+	height: 22.768px;
+		}
+	25%{
+	left: 236.25px;
+	}
+	49%{
+	height: 22.768px;
+	top: 242.232px;
+	}
+	50%{
+	left: 206.25px;
+	height: 0px;
+	top: 252.232px;
+	}
+	65%{
+	height: 22.768px;
+	}
+	75%{
+	left: 196.25px;
+	}
+	100%{
+	left: 206.25px;
+	top: 242.232px;
+	height: 22.768px;
+	}
+}
+
+.olhod{
+	position: absolute;
+	width: 65.644px;
+	background-color: #BA101D;
+	border-radius: 50%;
+	transform: rotate(-6.28deg);
+	animation: olho2 5s;
+	animation-iteration-count: infinite;
+	}
+	@keyframes olho2{
+	0%{
+	left: 287.178px;
+	top: 240.448px;
+	height: 21.912px;
+		}
+	25%{
+	left: 317.178px;
+	}
+	49%{
+	height: 21.912px;
+	top: 240.448px;
+	}
+	50%{
+	left: 287.178px;
+	height: 0px;
+	top: 250.448px;
+	}
+	65%{
+	height: 22.768px;
+	}
+	75%{
+	left: 277.178px;
+	}
+	100%{
+	left: 287.178px;
+	top: 240.448px;
+	height: 21.912px;
+	}
+}
+.nariz{
+	position: absolute;
+	left: 249.88px;
+	top: 273.336px;
+	width: 0px;
+	height: 0px;
+	border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 50px solid #805C64;
+	}
+.boca{
+	position: absolute;
+	left: 248.05px;
+	top: 335.894px;
+	width: 65.9px;
+	height: 16.313px;
+	background-color: #5B0C1F;
+	border-radius: 50%;
+	transform: rotate(-3.25deg);
+	}
+.peslaranja{
+	position: absolute;
+	left: 135.688px;
+	top: 256.722px;
+	width: 93px;
+	height: 146.982px;
+	background-color: #FF923C;
+	transform: rotate(-308.61deg);
+	z-index: -1;
+	}
+.pesamarelo{
+	position: absolute;
+	left: 364.421px;
+	top: 240.235px;
+	width: 93.157px;
+	height: 201.527px;
+	background-color: #F9C133;
+	border-radius: 50%;
+	transform: rotate(-7.66deg);
+	z-index: -1;
+	}
+.pesmarrom{
+	position: absolute;
+	left: 222.873px;
+	top: 400.416px;
+	width: 197.001px;
+	height: 83.949px;
+	background-color: #5C383C;
+	transform: rotate(-22.81deg);
+	}
+.pespreto{
+	position: absolute;
+	left: 117px;
+	top: 345px;
+	width: 341px;
+	height: 112px;
+	background-color: #020400;
+	z-index: -2;
+	}
+.tronco{
+	position: absolute;
+	left: 83px;
+	top: 424px;
+	width: 422px;
+	height: 191px;
+	background-color: #351E2A;
+	z-index: -3;
+	}

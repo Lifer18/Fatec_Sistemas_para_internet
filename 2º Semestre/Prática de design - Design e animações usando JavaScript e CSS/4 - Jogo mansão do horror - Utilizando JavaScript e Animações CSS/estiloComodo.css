@@ -1,0 +1,404 @@
+body{
+  margin: 0;
+}
+.cont-comodo{
+  width: 800px;
+  height: 600px;
+  position: relative;
+
+}
+.carta{
+  position: absolute;
+  left: 200px;
+  top: 300px;
+  opacity: 0;
+  animation: carta 1s forwards;
+  z-index: 1;
+}
+.papel{
+  position: absolute;
+  left: 250px;
+  top: 10px;
+  opacity: 0;
+  animation: papel 5s forwards;
+  z-index: 1;
+}
+.legenda{
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  opacity: 0;
+  animation: legenda 10s forwards;
+  z-index: 1;
+}
+.fundok{
+  position: absolute;
+  left: 0;
+  opacity: 0;
+}
+.lanternafeixe{
+  position: absolute;
+  left: 304px;
+  top: 272.5px;
+  animation: feixe 10s infinite;
+  }
+.bau{
+  position: absolute;
+  top: 403px;
+  left: 0px;
+  cursor: pointer;
+}
+.legbau{
+  position: absolute;
+  bottom: 5px;
+  left: 250px;
+  opacity: 0;
+  color: white;
+}
+
+.knightre{
+  position: absolute;
+  top: 100px;
+  cursor: pointer;
+}
+.legknightre{
+  position: absolute;
+  bottom: 5px;
+  left: 250px;
+  opacity: 0;
+  color: white;
+}
+.lanternainteira{
+  position: absolute;
+  opacity: 0;
+  top: 315px;
+  left: 291px;
+  cursor: pointer;
+}
+.lanterna{
+  position: absolute;
+  top: 315px;
+  left: 291px;
+  cursor: pointer;
+}
+.leglanterna{
+  position: absolute;
+  bottom: 5px;
+  left: 200px;
+  opacity: 0;
+  color: white;
+}
+.knight{
+  position: absolute;
+  left: 269px; 
+  top: 76px;
+  cursor: pointer;
+}
+.capacete{
+  position: absolute;
+  display: block;
+  cursor: pointer;
+  left: 315px; 
+  top: 84px;
+}
+.knightv{
+  position: absolute;
+  top: 10px;
+  left: 290px;
+  animation: knightv 10s infinite;
+}
+.rubi{
+  position: absolute;
+  top: 10px;
+  left: 565px;
+  cursor: pointer;
+}
+.rubiinteiro{
+  position: absolute;
+  opacity: 0;
+  top: 10px;
+  left: 565px;
+  cursor: pointer;
+}
+.legrubi{
+  position: absolute;
+  bottom: 5px;
+  left: 250px;
+  opacity: 0;
+  color: white;
+}
+.espada{
+  position: absolute;
+  top: 239px;
+  left: 512px;
+  cursor: pointer;
+}
+.espadainteira{
+  position: absolute;
+  opacity: 0;
+  top: 239px;
+  left: 512px;
+  cursor: pointer;
+}
+.legespada{
+  position: absolute;
+  bottom: 5px;
+  left: 250px;
+  opacity: 0;
+  color: white;
+}
+.gargola{
+  position: absolute;
+  top: 159px;
+  left: 544px;
+  cursor: pointer;
+}
+.gargolaataque{
+	position: absolute;
+	opacity: 0;
+	top: 43px;
+	left: 338px;
+}
+.quadro{
+  position: absolute;
+  top: 196px;
+  left: 638px;
+  cursor: pointer;
+}
+.quadrointeiro{
+  position: absolute;
+  opacity: 0;
+  top: 196px;
+  left: 638px;
+  cursor: pointer;
+}
+.legquadro{
+  position: absolute;
+  bottom: 5px;
+  left: 250px;
+  opacity: 0;
+  color: white;
+}
+.orgao{
+  position: absolute;
+  top: -5px;
+  left: 717px;
+  cursor: pointer;
+}
+.livro{
+	position: absolute;
+	top: 341px;
+	left: 695px;
+	cursor: pointer;
+}
+.leglivro{
+  position: absolute;
+  bottom: 5px;
+  left: 250px;
+  opacity: 0;
+  color: white;
+}
+.anim-bau{
+  animation: bau 1s;
+}
+.anim-legbau{
+  animation: legbau 2.25s;
+}
+.anim-knightre{
+  animation: knightre 2s;
+}
+.anim-legknightre{
+  animation: legknightre 2.25s;
+}
+.anim-lanterna{
+  animation: lanterna 2s;
+}
+.anim-leglanterna{
+  animation: leglanterna 2.25s;
+}
+.anim-knight{
+  animation: knight 2s;
+}
+.anim-rubi{
+  animation: rubi 2s;
+}
+.anim-legrubi{
+  animation: legrubi 2.25s;
+}
+.anim-espada{
+  animation: espada 2s;
+}
+.anim-legespada{
+  animation: legespada 2.25s;
+}
+.anim-gargola{
+  animation: gargola 1s;
+}
+.anim-fundo{
+	animation: fundo 1s;
+}
+.anim-fundok{
+  animation: fundok 1s;
+}
+.anim-quadro{
+  animation: quadro 1.5s;
+}
+.anim-legquadro{
+  animation: legquadro 2.25s;
+}
+.anim-livro{
+  animation: livro 2s;
+}
+.anim-leglivro{
+  animation: legknightre 2.25s;
+}
+@keyframes carta {
+  0%{opacity: 0;}
+  10%{opacity: 1;}
+  90%{opacity: 1;}
+  99%{left: 200px;}
+  100%{opacity: 0;
+      left: 1000px;}
+
+}
+@keyframes papel {
+  0%{opacity: 0;}
+  20%{opacity: 0;}
+  21%{opacity: 1;}
+  90%{opacity: 1;}
+  99%{left: 250px;
+    opacity: 1;}
+  100%{opacity: 0;
+        left: 1000px;}
+
+}
+@keyframes legenda {
+  0%{opacity: 0;}
+  50%{opacity: 0;}
+  51%{opacity: 1;}
+  90%{opacity: 1;}
+  99%{left: 10px;}
+  100%{opacity: 0;
+      left: 1000px;}
+
+}
+@keyframes bau {
+  0%{left: 0px;}
+  25%{left: 10px;}
+  50%{left: 0px;}
+  75%{left: 10px;}
+  100%{left: 0px;}
+}
+@keyframes legbau {
+  0%{opacity: 0;}
+  25%{opacity: 1;}
+  90%{opacity: 1;}
+  100%{opacity: 0;}
+}
+@keyframes knightre {
+   0%{left: 0px;}
+  50%{left: 2px;}
+  100%{left: 0px;}
+}
+@keyframes legknightre {
+  0%{opacity: 0;}
+  25%{opacity: 1;}
+  90%{opacity: 1;}
+  100%{opacity: 0;}
+}
+@keyframes lanterna {
+  0%{opacity: 1;}
+  50%{transform: scale(2);}
+  100%{transform: scale(1);
+      opacity: 1;}
+}
+@keyframes leglanterna {
+  0%{opacity: 0;}
+  25%{opacity: 1;}
+  90%{opacity: 1;}
+  100%{opacity: 0;}
+}
+@keyframes knight {
+  0%{opacity: 0;}
+}
+@keyframes rubi {
+  0%{opacity: 1;}
+  50%{transform: scale(2);}
+  100%{transform: scale(1);
+      opacity: 1;}
+}
+@keyframes legrubi {
+  0%{opacity: 0;}
+  25%{opacity: 1;}
+  90%{opacity: 1;}
+  100%{opacity: 0;}
+}
+@keyframes espada {
+  0%{opacity: 1;}
+  50%{transform: scale(2);}
+  100%{transform: scale(1);
+      opacity: 1;}
+}
+@keyframes legespada {
+  0%{opacity: 0;}
+  25%{opacity: 1;}
+  90%{opacity: 1;}
+  100%{opacity: 0;}
+}
+@keyframes gargola {
+  0%{opacity: 1;
+  	z-index: 1}
+  50%{transform: scale(2);}
+  100%{transform: scale(1);
+      z-index:1;}
+}
+@keyframes fundo {
+  0%{filter: invert(100%);}
+  100%{filter: invert(0%);}
+}
+@keyframes fundok {
+  0%{filter: invert(100%);
+    opacity: 1;}
+  100%{filter: invert(0%);
+    opacity: 1;}
+}
+@keyframes quadro {
+  0%{opacity: 1;}
+  50%{transform: scale(2);}
+  100%{transform: scale(1);
+      opacity: 1;}
+}
+@keyframes legquadro {
+  0%{opacity: 0;}
+  25%{opacity: 1;}
+  90%{opacity: 1;}
+  100%{opacity: 0;}
+}
+@keyframes livro{
+  0%{transform: scale(1);}
+  50%{transform: scale(2);}
+  100%{ transform: scale(1);}
+}
+@keyframes leglivro {
+  0%{opacity: 0;}
+  25%{opacity: 1;}
+  90%{opacity: 1;}
+  100%{opacity: 0;}
+}
+@keyframes feixe {
+  0%{opacity: 0;}
+  49%{opacity: 0}
+  50%{opacity: 1;}
+  52%{opacity: 0;}
+  99%{opacity: 0;}
+  100%{opacity: 1;}
+}
+@keyframes knightv{
+  0%{top: 10px;
+  left: 290px;}
+  50%{top: 15px;
+    left: 320px;}
+  100%{top: 10px;
+  left: 290px;}
+}

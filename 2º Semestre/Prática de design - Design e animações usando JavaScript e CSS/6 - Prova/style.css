@@ -1,0 +1,81 @@
+*{
+  margin: 0;
+}
+.container{
+  position: relative;
+  width: 800px;
+  height: 600px;
+  margin: auto;
+  overflow: hidden;
+}
+.rodas{
+  animation: roda 1s infinite linear;
+}
+.roda1{
+  position: absolute;
+  left: 159px;
+  top: 384px;
+}
+.roda2{
+  position: absolute;
+  left: 304px;
+  top: 384px;
+}
+.roda3{
+  position: absolute;
+  left: 492px;
+  top: 384px;
+}
+.vara1{
+  position: absolute;
+  top: 393px;
+  left: 196px;
+}
+.vara2{
+  position: absolute;
+  left: 368px;
+  top: 393px;
+}
+.madruga{
+  position: absolute;
+  left: 200px;
+  top: 177px;
+  animation: trem 0.3s infinite alternate;
+}
+.trem{
+  position: absolute;
+  left: 156px;
+  top: 84px;
+  animation: trem 0.3s infinite alternate;
+  cursor: pointer;
+}
+.nuvem{
+  position: absolute;
+  right: -150px;
+  top: 90px;
+  animation: nuvem 4s infinite linear;
+}
+@keyframes trem {
+  0%{
+    transform: translateY(0px);
+  }
+  100%{
+    transform: translateY(5px);
+  }
+}
+@keyframes roda {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+}
+}
+@keyframes nuvem {
+  0%{
+    transform: translateX(0px);
+  }
+  100%{
+    transform: translateX(-950px);
+  }
+}
