@@ -1,0 +1,229 @@
+.container{
+  width: 960px;
+  margin: auto;
+}
+
+body{
+  background-image: url("../images/background.jpg");
+  margin: 0;
+  font-family: 'Merriweather', serif;
+}
+
+nav{
+  background-color: #3F0706;
+  height: 2.5rem;
+  padding-right: 9.37%;
+  line-height: 40px;
+  text-align: right;
+}
+
+a{
+  padding-right: 3.3%;
+  text-decoration: none;
+  color: white;
+}
+
+.logo{
+  position: absolute;
+  z-index: 1;
+  top: -2.604%;
+  left: 3.125%;
+  width: 18.64%;
+}
+
+.header{
+  position: relative;
+}
+
+.headerimg{
+    width: 100%;
+}
+.titulo{
+  position: absolute;
+  font-style: italic;
+  color: white;
+  font-size: 4.5rem;
+  text-align: center;
+  bottom: 1.042%;
+  margin: 0;
+  width: 100%;
+
+}
+
+.texto1{
+  background-color: #F4F0E4;
+  padding: 9.37%;
+}
+
+
+.cafes{
+  background-color: #BEA074;
+  padding: 90px;
+}
+.variedadesCafe{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.cafe{
+  width: 144px;
+}
+.cafe img{
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.localizacao{
+  width: 100%;
+  height: 420px;
+  position: relative;
+}
+iframe{
+  width: 100%;
+  height: 100%;
+}
+.visitar{
+  position: absolute;
+  top: 9.375%;
+  left: 9.375%;
+  width: 300px;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #3F0706;
+  color: #FFF;
+}
+
+.contato{
+  background-color: #F4F0E4;
+  padding: 9.37%;
+  display: flex;
+  justify-content: space-between;
+}
+.textoContato{
+  width: 220px;
+  font-size: 16px;
+}
+.medidaContato{
+  width: 380px;
+}
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 0 0 30px 0;
+    box-sizing: border-box;
+    border-style: none;
+}
+textarea{
+  width: 100%;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border-style: none;
+}
+input[type=submit] {
+  background-color: #3F0706;
+  border-style: none;
+  color: #FFF;
+  padding: 14px;
+  margin-top: 30px
+}
+.rodape{
+  background-color: #3F0706;
+  text-align: center;
+  height: 40px;
+  width: 960px;
+  color: #FFF;
+  display: table-cell;
+  vertical-align: middle;
+}
+.rodape p {
+  margin: 0;
+}
+
+@media (max-width:960px){
+
+	.container{
+  width: 70.88888888888889%;
+  margin: auto;
+}
+
+  input[type=submit]{
+    padding: 4.4%;
+  }
+  .visitar{
+    width: 31.25%;
+    top: 45px;
+    left: 45px;
+    font-size:0.80em;
+  }
+
+  textarea{
+    padding: 1.25% 2.08%;
+  }
+
+  .textoContato{
+    width: 2.90%;
+    font-size: 0.80em;
+  }
+
+  .medidaContato{
+    width: 49.58%;
+  }
+
+  .variedadesCafe{
+    justify-content: space-around;
+  }
+  .cafes{
+    padding: 9.37%;
+  }
+  .cafe{
+    text-align: center;
+  }
+  .cafe img{
+    margin-bottom: 1.04%;
+    width: 90%;
+  }
+
+  a{
+    font-size: 79.29%;
+  }
+}
+
+  .titulo{
+    font-size: 3.6rem;
+  }
+
+  @media (max-width:900px){
+    .titulo{
+      font-size: 2.95rem;
+    }
+  }
+  @media (max-width:800px){
+    .titulo{
+      font-size: 2.625rem;
+    }
+  }
+  @media (max-width:700px){
+    .titulo{
+      font-size: 2.30rem;
+    }
+  }
+  @media (max-width:600px){
+    .titulo{
+      font-size: 1.96rem;
+    }
+  }
+  @media (max-width:500px){
+    .titulo{
+      font-size: 1.64rem;
+    }
+   .cafe{
+     width: 100%;
+     text-align: center;
+   }
+   .cafe img{
+     max-width: 50%;
+     margin-left: auto;
+     margin-right: auto;
+     display: block;
+   }
+  }
