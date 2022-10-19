@@ -1,0 +1,6 @@
+
+Nº Inscrição: 1
+Nome: teste
+Cpf: 1
+Camiseta: P
+Efetivada: Sim
